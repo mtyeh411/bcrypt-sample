@@ -1,0 +1,25 @@
+{
+  "name": "bcrypt_sample",
+  "version": "0.0.1",
+  "description": "Sample app to display bcryptjs output",
+  "main": "dist",
+  "scripts": {
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "node dist",
+    "prestart": "yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Yeh",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "http": "^0.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
